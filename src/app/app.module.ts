@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
+import { MyStoryComponent } from './my-story/my-story.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeBodyComponent
+    HomeBodyComponent,
+    MyStoryComponent
   ],
  imports: [
     BrowserModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
