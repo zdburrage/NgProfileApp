@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
 import { MyStoryComponent } from './my-story/my-story.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
